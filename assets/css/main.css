@@ -3531,7 +3531,7 @@ input, select, textarea {
 		text-align: center;
 		z-index: 2;
 	}
-
+/*
 		#header input, #header select, #header textarea {
 			color: #ffffff;
 		}
@@ -3566,36 +3566,38 @@ input, select, textarea {
 		#header hr {
 			border-bottom-color: #ffffff;
 		}
-
+*/
+		
 		#header .logo {
 			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
 			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
 			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
-			border-style: solid;
-			border-color: #ffffff;
-			border-width: 5px !important;
-			font-family: "black future", Helvetica, sans-serif;
-			font-size: 2.25rem;
-			font-weight: 900;
-			letter-spacing: 0.075em;
-			line-height: 1;
-			padding: 1rem 1.75rem;
-			text-transform: uppercase;
-			visibility: visible;
+			
+			
 		}
 
-			#header .logo:hover {
-				border-color: #00FF5B !important;
-				color: #00FF5B !important;
-			}
+		#header .logo img {
+			width: 100%;  /* Ajusta el ancho como prefieras, puede ser un porcentaje o un valor fijo */
+			height: auto;  /* Esto asegura que la altura se ajuste automáticamente para mantener la relación de aspecto */
+			object-fit: contain;  /* Esto asegura que la imagen se ajuste dentro del espacio asignado sin ser recortada */
+		}
+
 
 		@media screen and (max-width: 980px) {
 
 			#header {
 				height: 14rem;
-				padding-bottom: 4rem;
+				padding-bottom: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			#header .logo img {
+				padding-bottom: 0rem;
+				width: 400px;  /* Cambia 200px por el ancho deseado */
+				height: auto;  /* Esto mantiene la relación de aspecto */
+				object-fit: contain;
 			}
 
 		}
@@ -3603,12 +3605,20 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding-bottom: 3rem;
+				padding-bottom: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			#header .logo img {
+				padding-bottom: 0rem;
+				width: 300px;  /* Cambia 200px por el ancho deseado */
+				height: auto;  /* Esto mantiene la relación de aspecto */
+				object-fit: contain;
 			}
 
 				#header .logo {
 					font-size: 1.75rem;
-					border-width: 3px !important;
+					
 				}
 
 		}
