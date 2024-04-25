@@ -4,14 +4,14 @@
 
 @font-face {
     font-family: 'Mokoto';
-    src: url('..webfonts/mokoto.regular.ttf') format('ttf');
+    src: url('../webfonts/mokoto.regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Black Future';
-    src: url('..webfonts/Black Future.otf') format('otf');
+    src: url('../webfonts/BlackFuture.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
