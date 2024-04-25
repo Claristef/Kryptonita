@@ -6,18 +6,10 @@
 
 @font-face {
     font-family: 'Mokoto';
-    src: url('https://github.com/Claristef/Kryptonita/blob/main/assets/webfonts/mokoto.regular.ttf') format('truetype');
+    src: url('../webfonts/mokoto.regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Black Future';
-    src: url('https://github.com/Claristef/Kryptonita/blob/main/assets/webfonts/BlackFuture.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 /*
 	Massively by HTML5 UP
